@@ -1,0 +1,209 @@
+/* 后引入的代码 */
+/* ----------------------------------------------------引入开始---------------------------------------------------------- */
+/* 给网址链接设置颜色 */
+@import url("style/link-icon-color.css");
+/* ————————————————————初始设置———————————————————— */
+/* 引入颜色和字体 */
+@import url("style/theme-setting.css");
+/* 引入一些初始设置 */
+@import url("style/07-others/begin-setting.css");
+/* 引入空行提示 */
+@import url("style/07-others/empty-letter.css");
+/* 设置界面背景 */
+@import url("style/07-others/background.css");
+/* 增加`/`分栏样式 */
+@import url("style/07-others/column.css");
+
+
+/* ————————————————————界面修改———————————————————— */
+/* 修改上左右dock栏样式 */
+@import url("style/02-appearance/dock.css");
+/* 修改头图下方icon样式 */
+@import url("style/02-appearance/banner-icon.css");
+/* 修改文档树样式 */
+@import url("style/02-appearance/file-tree.css");
+/* 修改大纲样式 */
+/* @import url("style/02-appearance/outline.css"); */
+/* 修改标签页样式 */
+@import url("style/02-appearance/tab-bar.css");
+/* 修改面包屑样式 */
+@import url("style/02-appearance/breadcrumb.css");
+/* 修改鼠标滑选块时光标颜色 */
+@import url("style/02-appearance/mouse.css");
+/* 修改选中文字后弹出的悬浮工具栏的样式 */
+@import url("style/02-appearance/toolbar.css");
+/* 修改弹出菜单的样式 */
+@import url("style/02-appearance/menu.css");
+/* 修改按钮样式 */
+@import url("style/02-appearance/button.css");
+/* 修改设置界面样式 */
+@import url("style/02-appearance/setting-option.css");
+/* 修改设置界面搜索栏样式 */
+@import url("style/02-appearance/search.css");
+/* 修改警告界面样式 */
+/* @import url("style/02-appearance/warning-color.css"); */
+
+
+/* ————————————————————行内元素———————————————————— */
+/* 修改高亮样式 */
+@import url("style/03-inline-span/mark.css");
+/* 修改加粗样式 */
+@import url("style/03-inline-span/strong.css");
+/* 修改下划线样式 */
+@import url("style/03-inline-span/underline.css");
+/* 修改删除线样式 */
+@import url("style/03-inline-span/line-through.css");
+/* 修改块引用样式 */
+@import url("style/03-inline-span/block-ref.css");
+/* 修改超链接样式 */
+@import url("style/03-inline-span/a-link.css");
+/* 修改标签样式 */
+@import url("style/03-inline-span/tag.css");
+/* 修改键盘keyboard样式 */
+@import url("style/03-inline-span/keyboard.css");
+/* 修改行内代码样式 */
+@import url("style/03-inline-span/inline-code.css");
+/* 修改上标和下标样式 */
+@import url("style/03-inline-span/sup-sub.css");
+/* 修改更多字体的样式 */
+@import url("style/03-inline-span/strong-morestyle.css");
+
+/* ————————————————————块级元素———————————————————— */
+/* 修改表格样式 */
+@import url("style/04-block-div/table.css");
+/* 修改引用样式 */
+@import url("style/04-block-div/blockquote.css");
+/* 修改嵌入块样式 */
+@import url("style/04-block-div/render-node.css");
+/* 修改图片样式 */
+@import url("style/04-block-div/image.css");
+/* 修改列表样式 */
+@import url("style/04-block-div/list.css");
+/* 修改待办事项样式 */
+@import url("style/04-block-div/task.css");
+/* 修改代码块样式 */
+@import url("style/04-block-div/code-block.css");
+/* 修改超级块样式 */
+@import url("style/04-block-div/super-block.css");
+/* 修改PDF双链的样式 */
+@import url("style/04-block-div/pdf.css");
+/* 修改分割线样式 */
+@import url("style/04-block-div/divider-fengexian.css");
+/* 修改标题样式 */
+@import url("style/04-block-div/NodeHeading-biaoti.css");
+/* 增加标题自动编号 */
+@import url("style/04-block-div/auto-number.css");
+/* 引入4种样式 */
+@import url("style/04-block-div/card.css");
+/* 修改折叠样式 */
+@import url("style/04-block-div/fold.css");
+/* 修改公式样式 */
+@import url("style/04-block-div/katex.css");
+
+
+/* ————————————————————引入自定义设置———————————————————— */
+/* 设置打印样式 */
+@import url("style/07-others/print.css");
+
+/* ----------------------------------------------------引入结束---------------------------------------------------------- */
+
+
+
+
+/*开始维修！*/
+/*修改变量；剔除过时的自定义属性、链接图标相关代码，有需请下载插件。*/
+/*设计页签*/
+.layout-tab-bar .item:not(.item--readonly):after{display:none}
+.layout-tab-bar .item__close{transition:all 300ms}
+.layout-tab-bar .item__close:hover{transition:all 300ms;transform:scale(1.2)}
+.layout-tab-bar .item__close:hover *{color:var(--b3-theme-primary) !important;}
+/*状态栏插件*/
+#status .toolbar__item span {margin: 3px 10px 0px -30px!important;font-size: 1px !important;padding: 10px;color: transparent;}
+/*字色面板*/
+.protyle-util .color__square,.pdf__util.b3-menu .color__square{transform:scale(1.1);border-radius:0px;box-shadow:unset;margin:0px 3px}
+.protyle-util .color__square[data-type="backgroundColor"]{border-radius:100px}
+.protyle-util .color__square[data-type="color"],.protyle-util .color__square[style="background-color:var(--b3-font-background13)"]{box-shadow:0px 0px 0px 1px #dee1e6 inset}
+.protyle-util .color__square:hover{box-shadow:0px 0px 0px 2px var(--b3-theme-primary-lighter) inset}
+[style*="color:var(--b3-font-color11)"], [style*="color: var(--b3-font-color11)"] {border-bottom: 2px solid var(--b3-theme-primary);color: inherit !important;}
+.b3-typography s, .b3-typography span[data-type~=s], .protyle-wysiwyg s, .protyle-wysiwyg span[data-type~=s] {color:inherit;opacity:0.6;}
+[style*="color: var(--b3-font-background11)"] {
+    background: linear-gradient(104deg, rgba(255,217,147,0) 0.9%, rgba(255,217,147,1.25) 2.4%, rgba(255,217,147,0.5) 5.8%, rgba(255,217,147,0.1) 93%, rgba(255,217,147,0.7) 96%, rgba(255,217,147,0) 98%), linear-gradient(183deg, rgba(255,217,147,0) 0%, rgba(255,217,147,0.3) 7.9%, rgba(255,217,147,0) 15%);
+    padding: 0.1em 0.3em;
+    -webkit-box-decoration-break: clone;
+    margin: 0;
+    border-radius: 7.5px;
+    text-shadow: -12px 12px 9.8px rgba(255,217,147,0.7), 21px -18.1px 7.3px rgba(255, 255, 255,1), -18.1px -27.3px 30px rgba(255, 255, 255,1);
+}
+[style*="color:var(--b3-font-background11)"]{
+    background: linear-gradient(104deg, rgba(255,217,147,0) 0.9%, rgba(255,217,147,1.25) 2.4%, rgba(255,217,147,0.5) 5.8%, rgba(255,217,147,0.1) 93%, rgba(255,217,147,0.7) 96%, rgba(255,217,147,0) 98%), linear-gradient(183deg, rgba(255,217,147,0) 0%, rgba(255,217,147,0.3) 7.9%, rgba(255,217,147,0) 15%);
+       -webkit-box-decoration-break: clone;
+}
+[style*="color:var(--b3-font-color10)"], [style*="color: var(--b3-font-color10)"] {
+    border-bottom: 3px dashed;
+}
+[style*="color:var(--b3-font-color9)"], [style*="color: var(--b3-font-color9)"] {
+    text-decoration: underline wavy var(--b3-theme-primary-lightest);
+    text-decoration-skip-ink: none;
+}
+[style*="color:var(--b3-font-color12)"]{border-bottom:1px solid var(--b3-theme-on-background)}
+[style*="color:var(--b3-font-color12)"]:hover{color: var(--b3-theme-on-background) !important;  transition:all 300ms;}
+[style*="color: var(--b3-font-color12)"]{transition:all 300ms;border-bottom:1px solid var(--b3-theme-on-background)}
+[style*="color: var(--b3-font-color12)"]:hover {
+  color: var(--b3-theme-on-background) !important;
+  transition:all 300ms;
+}
+[style*="color:var(--b3-font-color9)"]:hover,[style*="color:var(--b3-font-color10)"]:hover,[style*="color:var(--b3-font-color11)"]:hover,[style*="color:var(--b3-font-color12)"]:hover{box-shadow:unset !important;background-color:var(--b3-theme-primary-lightest)}
+.protyle-toolbar{box-shadow:0 0 2px rgba(0,0,0,0.08), 0 4px 8px rgba(0,0,0,0.10);border:1px solid var(--b3-border-normal)}
+/*集市*/
+.b3-card--wrap,.b3-card{box-shadow:unset;border:1px solid #dee1e6}
+.b3-card--wrap:hover,.b3-card:hover{box-shadow:unset;border:1px solid var(--b3-theme-primary)}
+/*备注*/
+.protyle-util  .b3-text-field.b3-text-field--text.fn__block {min-height: 200px !important;}
+/*修复图片*/
+.img .protyle-icons *{border-radius: 0px !important;}
+/*备注样式*/
+.protyle-wysiwyg span[data-type~=inline-memo]{
+    border-bottom: 0px solid !important;
+    background-color:transparent;
+background: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 50%,
+    var(--b3-theme-primary) 50%,
+    var(--b3-theme-primary) 100%
+  );
+  background-size: 7px 1px;
+  background-repeat: repeat-x;
+  background-position-y: bottom;
+    cursor: pointer;
+}
+span[data-type~=inline-memo]:not([data-type~="sup"]):not([data-type~="sub"]):after {
+    content: "注";
+    vertical-align: top;
+    font-size: .5em;
+    color:var(--b3-theme-primary);
+}
+span[data-type~="sup"][data-type~="inline-memo"],
+span[data-type~="sub"][data-type~="inline-memo"]
+{color:var(--b3-theme-primary)!important;}
+/*修代码块*/
+/*修数据库*/
+.av__row,.av__row--add{background-color:var(--b3-theme-background2)}
+.b3-chip[style="background-color:var(--b3-font-background10);color:var(--b3-font-color10)"],[data-name="av-col-option"] .color__square[style*="background10"]{color:#08a192 !important;border:none}
+.b3-chip[style="background-color:var(--b3-font-background9);color:var(--b3-font-color9)"],[data-name="av-col-option"] .color__square[style*="background9"]{color:#d16f8e !important;text-decoration:none}
+.b3-chip[style="background-color:var(--b3-font-background11);color:var(--b3-font-color11)"],[data-name="av-col-option"] .color__square[style*="background11"]{background:unset;background-color:#f9eace !important;color:#a5803a !important;text-shadow:unset;border-bottom:none;}
+[data-name="av-col-option"] .color__square[style*="background11"]{border-radius:var(--b3-border-radius)}
+.b3-chip[style="background-color:var(--b3-font-background11);color:var(--b3-font-color11)"]{border-radius:20px}
+.b3-chip[style="background-color:var(--b3-font-background12);color:var(--b3-font-color12)"],[data-name="av-col-option"] .color__square[style*="background12"]{color:black !important;background-color:#53bb87 !important;border-bottom:none;transition:none !important}
+.b3-chip[style="background-color:var(--b3-font-background13);color:var(--b3-font-color13)"]{box-shadow:0px 0px 0px 1px inset gray}
+[data-type="pin"]:hover svg,[data-type="pin"].block__icon--active svg,#pinWindow:hover svg,#pinWindow.toolbar__item--active svg
+{transform:rotate(45deg);transition:all 100ms;color:var(--b3-theme-primary);}
+[data-type="pin"] svg,#pinWindow svg{transition:all 200ms}
+.av__title{color:var(--b3-protyle-inline-blockref-color);font-weight:bold}
+.av__header .item{background-color:transparent;border-top:3px solid var(--b3-protyle-inline-blockref-color) !important;}
+.b3-text-field.fn__block[data-name="memo"]{background-color:transparent;display:inline-table;box-shadow:unset;border-radius:0px}
+.b3-text-field.fn__block[data-name="memo"]:focus{box-shadow:inset 0px 1px 0px 0px var(--b3-theme-primary),0px -3px 0px 0px var(--b3-theme-primary-lightest)}
+.b3-label--noborder:has(.b3-text-field.fn__block[data-name="memo"]) {background-color:transparent;text-align:center;margin-top:10px;border-bottom:none}
+.b3-text-field.fn__block[data-name="alias"],.b3-text-field.fn__block[data-name="name"],.b3-text-field.fn__block[data-name="bookmark"]{background-color:transparent;box-shadow:unset;border-radius:0px}
+.b3-text-field.fn__block[data-name="alias"]:focus,.b3-text-field.fn__block[data-name="name"]:focus,.b3-text-field.fn__block[data-name="bookmark"]:focus{box-shadow:inset 0px -1px 0px 0px var(--b3-theme-primary),0px 3px 0px 0px var(--b3-theme-primary-lightest)}
+.custom-attr .b3-label.b3-label--noborder{border-bottom:var(--b3-border-dashed);padding-bottom:0px}

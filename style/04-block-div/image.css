@@ -1,0 +1,46 @@
+/* --------------------------------------------图片img----------------------------------------------- */
+.protyle-wysiwyg img:not(img.emoji),
+.b3-typography img:not(img.emoji) {
+    cursor: pointer;
+    border-radius: var(--b3-border-radius-noraml);
+    text-align: left;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12),0px 0px 0px 1px #cfcece inset;
+    position: relative;
+}
+/* ——————————————————————调整网络图片左上角的图标格式—————————————————————————— */
+.protyle-wysiwyg [data-node-id] .img__net {
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 15px;
+    height: 15px;
+    color: transparent;
+    background-color: var(--b3-theme-background-gray);
+    border-top: var(--b3-border-wider) !important;
+    border-left: var(--b3-border-wider) !important;
+    border-radius: 5px 0px;
+    border-radius: var(--b3-border-radius-image-emoji);
+    box-shadow: var(--b3-img-net-shadow);
+}
+
+.protyle-wysiwyg [data-node-id] .img__net::before {
+    content: "🔍";
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    color: var(--b3-theme-primary);
+    font-size: 10px;
+}
+
+/* ————————————————————设置图片右上角按钮背景颜色———————————————————— */
+.img .protyle-icons {
+    background-color: var(--b3-theme-background2);
+    top: 7px;
+    right: 4px;
+    border: var(--b3-border-wider);
+    border-radius: 0px !important;
+}
+
+/* --------------------------------------------图片 END----------------------------------------------- */
