@@ -87,8 +87,6 @@
 @import url("style/04-block-div/super-block.css");
 /* 修改PDF双链的样式 */
 @import url("style/04-block-div/pdf.css");
-/* 修改分割线样式 */
-@import url("style/04-block-div/divider-fengexian.css");
 /* 修改标题样式 */
 @import url("style/04-block-div/NodeHeading-biaoti.css");
 /* 增加标题自动编号 */
@@ -117,6 +115,7 @@
 .layout-tab-bar .item__close{transition:all 300ms}
 .layout-tab-bar .item__close:hover{transition:all 300ms;transform:scale(1.2)}
 .layout-tab-bar .item__close:hover *{color:var(--b3-theme-primary) !important;}
+.layout-tab-bar{background-color:var(--b3-theme-tab)}
 /*状态栏插件*/
 #status .toolbar__item span {margin: 3px 10px 0px -30px!important;font-size: 1px !important;padding: 10px;color: transparent;}
 /*字色面板*/
@@ -207,3 +206,64 @@ span[data-type~="sub"][data-type~="inline-memo"]
 .b3-text-field.fn__block[data-name="alias"],.b3-text-field.fn__block[data-name="name"],.b3-text-field.fn__block[data-name="bookmark"]{background-color:transparent;box-shadow:unset;border-radius:0px}
 .b3-text-field.fn__block[data-name="alias"]:focus,.b3-text-field.fn__block[data-name="name"]:focus,.b3-text-field.fn__block[data-name="bookmark"]:focus{box-shadow:inset 0px -1px 0px 0px var(--b3-theme-primary),0px 3px 0px 0px var(--b3-theme-primary-lightest)}
 .custom-attr .b3-label.b3-label--noborder{border-bottom:var(--b3-border-dashed);padding-bottom:0px}
+/*分割线*/
+.protyle-wysiwyg [data-node-id].hr>div:after{border-bottom:2px dashed var(--b3-border-color1);background-color:transparent;top:11px}
+/*搜索*/
+#searchList,
+#globalSearchList {
+    padding-right: 0px !important;
+}
+
+#searchList [data-type="search-item"],
+#globalSearchList [data-type="search-item"] {
+    display: block !important;
+    padding-top: 0px !important;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+#searchList [data-type="search-item"]>.b3-list-item__graphic,
+#globalSearchList [data-type="search-item"]>.b3-list-item__graphic {
+    position: absolute;
+    margin-top: 6px !important;
+    margin-left: 2px !important;
+}
+
+#searchList [data-type="search-item"]>.b3-list-item__text,
+#globalSearchList [data-type="search-item"]>.b3-list-item__text {
+    margin-left: 20px;
+    max-height: 73px !important;
+    padding-top: 5px !important;
+    padding-bottom: 2px !important;
+    padding-right: 5px !important;
+    overflow-y: auto !important;
+    text-overflow: ellipsis !important;
+    line-height: 1.3;
+    -webkit-box-orient: inherit !important;
+}
+
+#searchList [data-type="search-item"]>.b3-list-item__meta.b3-list-item__meta--ellipsis,
+#globalSearchList [data-type="search-item"]>.b3-list-item__meta.b3-list-item__meta--ellipsis {
+    display: block !important;
+    max-width: 95% !important;
+    margin-top: -7px !important;
+    margin-bottom: -5px !important;
+    padding-left: 12px !important;
+}
+#searchList [data-type="search-item"], #globalSearchList [data-type="search-item"] {
+    padding:2px 2px 4px 2px;
+    border-bottom:1px dashed var(--b3-border-color);
+    border-radius: 0px 0px 0px 0px;
+   margin:1px 1px;
+   padding-top:6px !important;
+}
+#searchList ::-webkit-scrollbar, #globalSearchList ::-webkit-scrollbar {
+   width:0px;
+}
+.protyle-hint.b3-list--background{background:var(--b3-menu-background) !important}
+.config__panel{background-image:linear-gradient(180deg,
+            rgba(255, 232, 232, 0.4) 0%,
+            rgba(236, 236, 255, 0.54) 25%,
+            rgba(228, 247, 236, 0.3) 50%,
+            rgba(223, 254, 224, 0.2) 75%,
+            rgba(245, 247, 249, 0.99) 100%)}

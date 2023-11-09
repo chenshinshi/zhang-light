@@ -116,19 +116,24 @@ button.b3-list-item.b3-list-item--two.fn__block[data-value="%E2%80%8B4"] .b3-lis
 
 /* ————————————————————调整挂件和模板窗口的分栏效果，仍旧分为4栏—————————————————————————————— */
 .b3-list.fn__flex-1.b3-list--background:not(ul.b3-list.b3-list--background.fn__flex-1, div#globalSearchList) {
-    column-count: 4;
-    column-gap: 5px;
-    min-width: 50vw !important;
     font-size: 90%;
     /* border: 0.2em solid #ffffff4d; */
     border: var(--b3-border-column-item);
+background:linear-gradient(180deg,
+            rgba(255, 232, 232, 0.4) 0%,
+            rgba(236, 236, 255, 0.54) 25%,
+            rgba(228, 247, 236, 0.3) 50%,
+            rgba(223, 254, 224, 0.2) 75%,
+            rgba(245, 247, 249, 0.99) 100%);
 }
-
-
+.history__repo.fn__block .b3-list--background,[data-key="viewCards"] .b3-list--background{background:linear-gradient(180deg,
+            rgba(255, 232, 232, 0.4) 0%,
+            rgba(236, 236, 255, 0.54) 25%,
+            rgba(228, 247, 236, 0.3) 50%,
+            rgba(223, 254, 224, 0.2) 75%,
+            rgba(245, 247, 249, 0.99) 100%);}
 /* ————————————————————设置挂件和模板窗口每个项目的宽度———————————————————— */
 .b3-list.fn__flex-1.b3-list--background:not(ul.b3-list.b3-list--background.fn__flex-1, div#globalSearchList) .b3-list-item {
-    max-width: 200px;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
