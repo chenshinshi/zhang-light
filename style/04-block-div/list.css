@@ -50,14 +50,14 @@
 /* ----------------------------------列表 END--------------------------------------- */
 
 /* -------------------------------无序列表前的小竖线颜色-------------------------------------------- */
-.protyle-wysiwyg [data-node-id].li>[data-node-id]:before {
+/*.protyle-wysiwyg [data-node-id].li>[data-node-id]:before {
     content: "";
     position: absolute;
     border-left: var(--b3-border-wider);
     top: 4px;
     left: -18px;
     z-index: 3;
-}
+}*/
 
 /* ---------------------给有颜色背景的块设置前面无序列表的样式---------------- */
 .list[style*="background-color: var(--b3-font-background"] .li>:before {

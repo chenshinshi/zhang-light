@@ -267,3 +267,9 @@ span[data-type~="sub"][data-type~="inline-memo"]
             rgba(228, 247, 236, 0.3) 50%,
             rgba(223, 254, 224, 0.2) 75%,
             rgba(245, 247, 249, 0.99) 100%)}
+
+
+.protyle-wysiwyg [data-node-id].li:before,.protyle-wysiwyg [data-node-id].li>[data-node-id]:before{border-left:var(--b3-border-wider)}
+
+.dock#dockBottom{background-color:transparent;margin-top:-42px}
+.dock#dockBottom .dock__item {background-color:var(--b3-theme-surface);border:var(--b3-border-normal)}

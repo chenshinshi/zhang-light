@@ -2,8 +2,7 @@
 /* 表格100%宽度 */
 .protyle-wysiwyg table,
 .b3-typography table {
-    display: table;
-    width: 100%;
+    width: auto;
 }
 
 /* 表格居中的自定义属性 */
