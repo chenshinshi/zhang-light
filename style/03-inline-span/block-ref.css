@@ -1,20 +1,20 @@
 /* 设置引用块格式 */
-.protyle-wysiwyg [data-node-id] span[data-type='block-ref'] {
+.protyle-wysiwyg [data-node-id] span[data-type*='block-ref'] {
     color: inherit;
     padding: 0.1em 0.2em;
     padding-bottom: 0.05em !important;
-    border-bottom: 1px solid var(--b3-theme-primary);
+    /*border-bottom: 1px solid var(--b3-theme-primary);*/
     margin: 2px;
 }
 
 /* 为引用块后面增加引用图标 */
-.protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::before {
+/*.protyle-wysiwyg [data-node-id] span[data-type="block-ref"]::before {
     content: "📑";
     position: relative;
     font-size: 80%;
     top: -0.1em;
     margin-right: 2px;
-}
+}*/
 
 .protyle-wysiwyg [data-node-id] span[data-type="block-ref"]:hover {
     color: var(--b3-theme-primary);

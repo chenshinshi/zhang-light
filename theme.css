@@ -185,6 +185,24 @@ span[data-type~=inline-memo]:not([data-type~="sup"]):not([data-type~="sub"]):aft
 span[data-type~="sup"][data-type~="inline-memo"],
 span[data-type~="sub"][data-type~="inline-memo"]
 {color:var(--b3-theme-primary)!important;}
+[data-node-id][data-type=block-ref],
+[data-id][data-type=block-ref]::before,
+span[data-type~=block-ref]::before, 
+span[data-type~=file-annotation-ref]::before{
+  content: "[[";
+    color:var(--b3-theme-primary);
+}
+[data-node-id][data-type=block-ref],
+[data-id][data-type=block-ref]::after,
+span[data-type~=block-ref]::after, 
+span[data-type~=file-annotation-ref]::after{
+  content: "]]";
+    color:var(--b3-theme-primary);
+}
+.og-hierachy-navigate-doc-container span.docLinksWrapper [data-type=block-ref]::before,.og-hierachy-navigate-doc-container span.docLinksWrapper [data-type=block-ref]::after {
+   display:none;
+}
+
 /*修代码块*/
 /*修数据库*/
 .av__row,.av__row--add{background-color:var(--b3-theme-background2)}
@@ -269,7 +287,37 @@ span[data-type~="sub"][data-type~="inline-memo"]
             rgba(245, 247, 249, 0.99) 100%)}
 
 
-.protyle-wysiwyg [data-node-id].li:before,.protyle-wysiwyg [data-node-id].li>[data-node-id]:before{border-left:var(--b3-border-wider)}
+.protyle-wysiwyg [data-node-id].li:before{border-left:var(--b3-border-wider)}
 
-.dock#dockBottom{background-color:transparent;margin-top:-42px}
+.dock#dockBottom{background-color:transparent;margin-top:-42px;border:none}
 .dock#dockBottom .dock__item {background-color:var(--b3-theme-surface);border:var(--b3-border-normal)}
+.layout-tab-container.fn__flex-1 .card__main .block__icons{margin-top:-5px;margin-bottom:-10px}
+.card__block--hidemark span[data-type~="mark"]{color:transparent !important}
+.card__block--hidemark span[data-type~="mark"]:hover{background-color:transparent !important;color:var(--b3-theme-on-background) !important}
+li.item.item--pin:not(.item--focus):before {
+    content: "";
+    content: url("src/pin.svg");
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    width: 12px;
+    height: 12px;
+    opacity: 0.3;
+    filter: grayscale(100%);
+}
+
+li.item.item--pin.item--focus:before {
+    content: "";
+    content: url("src/pin.svg") !important;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    width: 12px;
+    height: 12px;
+}
+.block__edit.fn__flex-1.protyle{overflow-y:hidden}
+
+.block__edit.fn__flex-1.protyle .protyle-wysiwyg.protyle-wysiwyg--attr {
+    padding: 5px 15px 0px 8px!important;
+}
+.block__popover--open .block__icons{min-height:32px}
