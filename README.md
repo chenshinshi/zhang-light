@@ -2,7 +2,9 @@
 
 - 原作者 UserZYF，由 chenshinshi 适配并上传新版本思源。
 
-- 删除与插件功能重合的代码，推荐下载集市插件。
+- 取消标题自动编号请自行将`theme.css`文件中的`@import url("style/04-block-div/auto-number.css");`改为`/*@import url("style/04-block-div/auto-number.css");*/`
+
+- 删除与插件功能重合以及自定义属性相关的代码（所以其实是 zhang-light 的轻量版简称 zhang-light-light），推荐下载集市插件。
 
   - 列表视图——自定义块属性
 
