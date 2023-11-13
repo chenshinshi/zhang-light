@@ -2,7 +2,6 @@
 .b3-menu, .b3-menu .b3-menu__submenu {
     border-radius: var(--b3-border-radius-noraml);
     /* padding: 6px 6px 6px; */
-    min-width: 200px !important;
     background-color: var(--b3-menu-background);
     padding: 4px;
 }
