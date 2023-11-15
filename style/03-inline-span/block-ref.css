@@ -1,10 +1,9 @@
 /* 设置引用块格式 */
 .protyle-wysiwyg [data-node-id] span[data-type*='block-ref'] {
     color: inherit;
-    padding: 0.1em 0.2em;
-    padding-bottom: 0.05em !important;
+    padding-inline:0.2em;
     /*border-bottom: 1px solid var(--b3-theme-primary);*/
-    margin: 2px;
+    margin: 2px;opacity:1;
 }
 
 /* 为引用块后面增加引用图标 */
@@ -23,10 +22,21 @@
 }
 
 /* 引用块悬浮时头部的背景颜色 */
-.b3-menu, .protyle-util {
-    box-shadow: var(--b3-small-kuaiyinyong-shadow)
+.b3-menu, .protyle-util, .b3-menu .b3-menu__submenu {
+    box-shadow: var(--b3-small-kuaiyinyong-shadow);
+background-color:/*var(--b3-theme-background2)*/transparent;
 }
-
+.b3-menu:after, .protyle-util:after, .b3-menu .b3-menu__submenu:after{
+content:"";
+position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -3;
+background-color: rgba(255,255,255,.4);
+    backdrop-filter: blur(15px);
+}
 /* 上方表头区域 */
 .block__popover--move>.block__icons {
     color: var(--b3-theme-primary);

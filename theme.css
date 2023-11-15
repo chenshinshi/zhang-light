@@ -237,7 +237,7 @@ span[data-type~=file-annotation-ref]::after{
     display: block !important;
     padding-top: 0px !important;
     padding-right: 0px !important;
-    padding-left: 0px !important;
+    /*padding-left: 0px !important;*/
 }
 
 #searchList [data-type="search-item"]>.b3-list-item__graphic,
@@ -366,7 +366,7 @@ li.item.item--pin.item--focus:before {
 .card__main .protyle-breadcrumb{position:relative}
 .card__main .protyle-content{padding-top:0px}
 
-.protyle-wysiwyg img:not(img.emoji){transition:all 300ms}
+.protyle-wysiwyg img:not(img.emoji){transition:box-shadow 300ms}
 .protyle-wysiwyg img:not(img.emoji):hover{box-shadow:0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px #cfcece inset,0 2px 12px 0 rgba(0,0,0,0.3);}
 
 
@@ -377,3 +377,4 @@ li.item.item--pin.item--focus:before {
 .backlinkMList.fn__flex-1 .protyle-breadcrumb__bar>span:last-child:hover,.backlinkList.fn__flex-1 .protyle-breadcrumb__bar>span:last-child:hover{
     opacity: 1;
 }
+#searchList .b3-list-item:has(.b3-list-item__toggle--hl){background-color:var(--b3-theme-tm2);margin:0px}

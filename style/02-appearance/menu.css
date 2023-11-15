@@ -1,8 +1,7 @@
 /* ---------------------------左上方点击更多按钮弹出的选择菜单相关设置----------------------- */
-.b3-menu, .b3-menu .b3-menu__submenu {
+.b3-menu {
     border-radius: var(--b3-border-radius-noraml);
     /* padding: 6px 6px 6px; */
-    background-color: var(--b3-menu-background);
     padding: 4px;
 }
 
@@ -37,7 +36,7 @@ button.b3-menu__item:hover {
 
 /* 给每个条目设置更高的行高 */
 .b3-menu .b3-menu__item {
-    background-color: var(--b3-theme-background2);
+    background-color: transparent;
     /* line-height: 35px !important; */
 }
 
