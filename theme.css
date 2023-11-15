@@ -115,7 +115,7 @@
 .layout-tab-bar .item__close{transition:all 300ms}
 .layout-tab-bar .item__close:hover{transition:all 300ms;transform:scale(1.2)}
 .layout-tab-bar .item__close:hover *{color:var(--b3-theme-primary) !important;}
-.layout-tab-bar{background-color:var(--b3-theme-tab)}
+/*.layout-tab-bar{background-color:var(--b3-theme-tab)}*/
 /*状态栏插件*/
 #status .toolbar__item span {margin: 3px 10px 0px -30px!important;font-size: 1px !important;padding: 10px;color: transparent;}
 /*字色面板*/
@@ -378,3 +378,5 @@ li.item.item--pin.item--focus:before {
     opacity: 1;
 }
 #searchList .b3-list-item:has(.b3-list-item__toggle--hl){background-color:var(--b3-theme-tm2);margin:0px}
+.block__edit.fn__flex-1.protyle .protyle-wysiwyg.protyle-wysiwyg--attr .b3-tooltips:after{max-width:400px}
+.block__edit.fn__flex-1.protyle .protyle-wysiwyg.protyle-wysiwyg--attr [data-node-id][memo]:first-child,.block__edit.fn__flex-1.protyle .protyle-wysiwyg.protyle-wysiwyg--attr [data-node-id][name]:first-child,.block__edit.fn__flex-1.protyle .protyle-wysiwyg.protyle-wysiwyg--attr [data-node-id][alias]:first-child,.block__edit.fn__flex-1.protyle .protyle-wysiwyg.protyle-wysiwyg--attr [data-node-id][bookmark]:first-child{margin-top:5px}

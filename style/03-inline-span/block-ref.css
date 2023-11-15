@@ -24,7 +24,7 @@
 /* 引用块悬浮时头部的背景颜色 */
 .b3-menu, .protyle-util, .b3-menu .b3-menu__submenu {
     box-shadow: var(--b3-small-kuaiyinyong-shadow);
-background-color:/*var(--b3-theme-background2)*/transparent;
+background-color:transparent;
 }
 .b3-menu:after, .protyle-util:after, .b3-menu .b3-menu__submenu:after{
 content:"";

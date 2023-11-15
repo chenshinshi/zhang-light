@@ -9,7 +9,7 @@
     height: 24px !important;
     opacity: 0;
     top: 84px;
-    position: absolute;
+   /* position: absolute;*/
     left: 0px;
     margin: 0;
 }
@@ -59,6 +59,7 @@
     background-color: transparent;
     position: static;
     margin: 0;
+box-shadow:unset;
     padding: 0;
 }
 
@@ -137,8 +138,16 @@
     position: static;
     margin: 0;
     padding: 0;
+box-shadow:unset;
 }
-
+.protyle-icon--first {
+    border-bottom-left-radius:var(--b3-border-radius-noraml);
+    border-top-left-radius:var(--b3-border-radius-noraml);
+}
+.protyle-icon--last {
+    border-bottom-right-radius:var(--b3-border-radius-noraml);
+    border-top-right-radius:var(--b3-border-radius-noraml);
+}
 /* ————————————————————鼠标在每个icon和提示文字上悬浮时改变颜色—————————————————— */
 /* 改变背景和icon的颜色 */
 .protyle-background__img .protyle-icons .b3-tooltips:hover {
