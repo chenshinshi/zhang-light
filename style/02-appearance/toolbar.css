@@ -11,7 +11,7 @@
 
 .protyle-toolbar__item:hover:not(.protyle-toolbar__item:focus) {
     color: var(--b3-font-color-hover);
-    background-color: var(--b3-theme-hover-gray);
+    background-color: /*var(--b3-theme-hover-gray)*/#efefef;
     border-radius: var(--b3-border-radius-noraml);
 }
 

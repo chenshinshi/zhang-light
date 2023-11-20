@@ -380,3 +380,5 @@ li.item.item--pin.item--focus:before {
 #searchList .b3-list-item:has(.b3-list-item__toggle--hl){background-color:var(--b3-theme-tm2);margin:0px}
 .block__edit.fn__flex-1.protyle .protyle-wysiwyg.protyle-wysiwyg--attr .b3-tooltips:after{max-width:400px}
 .block__edit.fn__flex-1.protyle .protyle-wysiwyg.protyle-wysiwyg--attr [data-node-id][memo]:first-child,.block__edit.fn__flex-1.protyle .protyle-wysiwyg.protyle-wysiwyg--attr [data-node-id][name]:first-child,.block__edit.fn__flex-1.protyle .protyle-wysiwyg.protyle-wysiwyg--attr [data-node-id][alias]:first-child,.block__edit.fn__flex-1.protyle .protyle-wysiwyg.protyle-wysiwyg--attr [data-node-id][bookmark]:first-child{margin-top:5px}
+.protyle-content{overflow-x:hidden}
+.protyle-preview__action{margin-top:30px}

@@ -109,7 +109,7 @@
 /* ————————————————————6蓝色———————————————————— */
 .pdf__rect.popover__block>[style*="background-color: var(--b3-pdf-background6)"]:before {
     background-color: var(--b3-pdf-background6);
-    border-bottom: 2px solid var(--b3-font-color6);
+    border-bottom: 2px solid var(--b3-font-color8);
 }
 
 /* ————————————————————7紫色———————————————————— */
